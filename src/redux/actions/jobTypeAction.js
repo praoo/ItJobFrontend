@@ -14,7 +14,7 @@ import {
 export const jobTypeLoadAction = () => async (dispatch) => {
     dispatch({ type: JOB_TYPE_LOAD_REQUEST });
     try {
-        const { data } = await axios.get('http://localhost:3000/api/type/jobs');
+        const { data } = await axios.get('http://localhost:9000/api/type/jobs');
         dispatch({
             type: JOB_TYPE_LOAD_SUCCESS,
             payload: data
